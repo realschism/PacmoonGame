@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacmoon Collector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="game-container">
+            <img src="pacmoonBanner.png" alt="Pacmoon Banner" class="banner">
+            <div class="game-area" id="gameArea">
+                <div class="pacmoon" id="pacmoon"></div>
+            </div>
+        </div>
+        <div class="score-container">
+            <div class="score-board-frame">
+                <div class="score-board">
+                    Score: <span id="score">0</span>
+                </div>
+                <div class="high-score-board">
+                    High Score: <span id="highScore">0</span>
+                </div>
+            </div>
+            <div class="controls-frame">
+                <div class="controls">
+                    Controls: Arrow keys to move
+                </div>
+            </div>
+            <div class="countdown-frame">
+                <div class="countdown">
+                    Time left: <span id="timer">45</span> seconds
+                </div>
+            </div>
+            <div class="promo-frame">
+                <div class="promo">
+                    Fangame made by <a href="https://x.com/realschism" target="_blank">@realschism</a><br>
+                    Give me a follow on <a href="https://x.com/realschism" target="_blank">X</a>
+                </div>
+            </div>
+            <button id="startButton">Start Game</button>
+            <button id="replayButton" style="display:none;">Replay</button>
+            <button id="soundButton" style="display:none;">Sound Off</button>
+        </div>
+    </div>
+    <audio id="coinSound" src="mixkit-game-treasure-coin-2038.wav" preload="auto"></audio>
+    <audio id="backgroundMusic" src="music.mp3" preload="auto" loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
